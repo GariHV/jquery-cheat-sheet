@@ -1,44 +1,130 @@
 1.2.2. Events
     When the HTML document has been loaded and you can manipulate it with JavaScript
+        -JavaScript
+            
+        -jQuery
     When an HTML item has been clicked
+        -JavaScript
+        -jQuery
     When an HTML item has been double clicked
+        -JavaScript
+        -jQuery
     When the user presses a key on the keyboard
+        -JavaScript
+        -jQuery
     When the user moves the mouse cursor
+        -JavaScript
+        -jQuery
     When the user changes a value of an text input
+        -JavaScript
+        -jQuery
     When an image is loaded
+        -JavaScript
+        -jQuery
     When an image fails to load, (if you write an incorrect image url the loading of the image will fail)
-    When a form is submitted
-    When the user changes the option of a select element
-    When you position the mouse over an element
-    When a checkbox is checked or unchecked
-    When a ul list item is clicked, show the item that was clicked
-1.2.2. Functions and Selectors
-    Create an HTML element with any text value
-    Remove an HTML element with any text value
-    Append an HTML element with any text value to a parent element
-    Prepend an HTML element with any text value to a parent element
+        -JavaScript
+        -jQuery
+                                            When a form is submitted
+                                                -JavaScript
+                                                -jQuery
+                                                    $( "#target" ).submit(function( event ) {alert( "Handler for .submit() called.");event.preventDefault();});
+                                            When the user changes the option of a select element
+                                                -JavaScript
+                                                -jQuery
+                                            When you position the mouse over an element
+                                                -JavaScript
+                                                -jQuery
+                                            When a checkbox is checked or unchecked
+                                                -JavaScript
+                                                -jQuery
+                                            When a ul list item is clicked, show the item that was clicked
+                                                -JavaScript
+                                                -jQuery
+                                        1.2.2. Functions and Selectors
+                                            Create an HTML element with any text value
+                                                -JavaScript
+                                                -jQuery
+                                            Remove an HTML element with any text value
+                                                -JavaScript
+                                                -jQuery
+                                            Append an HTML element with any text value to a parent element
+                                                -JavaScript
+                                                -jQuery
+                                            Prepend an HTML element with any text value to a parent element
+                                                -JavaScript
+                                                -jQuery
     Create and add an HTML element with any text value after another element
+        -JavaScript
+        -jQuery
     Create and add an HTML element with any text value before another element
+        -JavaScript
+        -jQuery
     Clone an HTML element within other element
+        -JavaScript
+        -jQuery
     Add a class to an HTML item
+        -JavaScript
+        -jQuery
     Remove a class to an HTML item
+        -JavaScript
+        -jQuery
     Toggle a class of an HTML item
+        -JavaScript
+        -jQuery
     Add a disabled attribute to an HTML button
+        -JavaScript
+        -jQuery
     Remove the disabled attribute of an HTML button
+        -JavaScript
+        -jQuery
     Set a data-src attribute to a img element
+        -JavaScript
+        -jQuery
     Remove the data-src attribute of the img element
+        -JavaScript
+        -jQuery
     Hide an HTML element on click (display: none)
+        -JavaScript
+        -jQuery
     Show an HTML element on click (display: block)
+        -JavaScript
+        -jQuery
     Fade in an HTML element using jQuery
+        -JavaScript
+        -jQuery
     Fade out an HTML element using jQuery
+        -JavaScript
+        -jQuery
     Iterate a collection of elements and apply a change of style on them
+        -JavaScript
+        -jQuery
     Get the parent element of a certain element and change its font weight
+        -JavaScript
+        -jQuery
     Get the collection of children of a certain element and change its font weight
+        -JavaScript
+        -jQuery
     Get all the elements that have a certain class and change their font weight
+        -JavaScript
+        -jQuery
     Get an item by id and change its font weight
+        -JavaScript
+        -jQuery
     Get all the elements that have a certain class and the display property of none and change their font color and the display itself so it’s visible.
+        -JavaScript
+        -jQuery
     Get the options of a select element that are selected (attribute selected)
+        -JavaScript
+        -jQuery
     Change the href attribute of the first <a> element (You have to create several <a> elements)
+        -JavaScript
+        -jQuery
     Show an alert with the value of the first <input> of the page (Create an <input> element to test this case)
+        -JavaScript
+        -jQuery
     Remove all items from a specific selector
+        -JavaScript
+        -jQuery
     Animate an item after 2 seconds from the initial page load
+        -JavaScript
+        -jQuery
