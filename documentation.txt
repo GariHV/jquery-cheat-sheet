@@ -24,35 +24,34 @@
     When an image fails to load, (if you write an incorrect image url the loading of the image will fail)
         -JavaScript
         -jQuery
-                                            When a form is submitted
-                                                -JavaScript
-                                                -jQuery
-                                                    $( "#target" ).submit(function( event ) {alert( "Handler for .submit() called.");event.preventDefault();});
-                                            When the user changes the option of a select element
-                                                -JavaScript
-                                                -jQuery
-                                            When you position the mouse over an element
-                                                -JavaScript
-                                                -jQuery
-                                            When a checkbox is checked or unchecked
-                                                -JavaScript
-                                                -jQuery
-                                            When a ul list item is clicked, show the item that was clicked
-                                                -JavaScript
-                                                -jQuery
-                                        1.2.2. Functions and Selectors
-                                            Create an HTML element with any text value
-                                                -JavaScript
-                                                -jQuery
-                                            Remove an HTML element with any text value
-                                                -JavaScript
-                                                -jQuery
-                                            Append an HTML element with any text value to a parent element
-                                                -JavaScript
-                                                -jQuery
-                                            Prepend an HTML element with any text value to a parent element
-                                                -JavaScript
-                                                -jQuery
+    When a form is submitted
+        -JavaScript
+        -jQuery
+    When the user changes the option of a select element
+        -JavaScript
+        -jQuery
+    When you position the mouse over an element
+        -JavaScript
+        -jQuery
+    When a checkbox is checked or unchecked
+        -JavaScript
+        -jQuery
+    When a ul list item is clicked, show the item that was clicked
+        -JavaScript
+        -jQuery
+1.2.2. Functions and Selectors
+    Create an HTML element with any text value
+        -JavaScript
+        -jQuery
+    Remove an HTML element with any text value
+        -JavaScript
+        -jQuery
+    Append an HTML element with any text value to a parent element
+        -JavaScript
+        -jQuery
+    Prepend an HTML element with any text value to a parent element
+        -JavaScript
+        -jQuery
     Create and add an HTML element with any text value after another element
         -JavaScript
         -jQuery

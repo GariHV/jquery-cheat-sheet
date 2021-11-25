@@ -7,32 +7,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/events.css">
 </head>
 
 <body>
-    <nav>
-        <ul class="nav-list">
-            <li><a class="nav-links" href="./index.html">Home</a></li>
-            <li><a class="nav-links" href="./about.html">About</a></li>
-            <li><a class="nav-links" href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <section class="main-event-menu">
+        <nav class="nav-head">
+            <ul class="nav-list">
+                <li> <a id='btnNeon-nav' href='/index.html' class="neon-button-nav"> Garikoitz's <br>JQuery & JavaScript
+                        Cheat
+                        Sheet</a></li>
+                <li><a class="nav-links" href="./events.html">Events</a></li>
+                <li><a class="nav-links" href="./functions_selectors.html">Functions</a></li>
+                <li><a class="nav-links" href="./selectors.html">Selectors</a></li>
+            </ul>
+        </nav>
 
-    <main data-router-wrapper>
-        <section data-router-view="home" class="home">
-            <div class="home-content">
-                <div class="home-presentation">
-                    <h1>Seamsless Transition</h1>
-                    <p>Beautiful transition between html pages</p>
+        <main data-router-wrapper class="main-events-page">
+            <section data-router-view="home" class="events-page">
+                <article class="home-content">
+                    <div class="event-presentation">
+                        <h1>Events</h1>
+                    </div>
+                    <div class="events-list">
+                        <ul>
+                            <li class="event-list-element"><a href="#event-1" class="btnEvent">HTML document has been
+                                    loaded</a></li>
+                            <li class="event-list-element"><a href="#event-2" class="btnEvent">HTML item has been
+                                    clicked</a></li>
+                            <li class="event-list-element"><a href="#event-3" class="btnEvent">HTML item has been double
+                                    clicked</a></li>
+                            <li class="event-list-element"><a href="#event-4" class="btnEvent">User presses a key on the
+                                    keyboard</a></li>
+                            <li class="event-list-element"><a href="#event-5" class="btnEvent">User moves the mouse
+                                    cursor</a></li>
+                            <li class="event-list-element"><a href="#event-6" class="btnEvent">User changes a value of
+                                    an text input</a></li>
+                            <li class="event-list-element"><a href="#event-7" class="btnEvent">Image is loaded</a></li>
+                            <li class="event-list-element"><a href="#event-8" class="btnEvent">Image fails to load</a>
+                            </li>
+                            <li class="event-list-element"><a href="#event-9" class="btnEvent">Form is submitted</a>
+                            </li>
+                            <li class="event-list-element"><a href="#event-10" class="btnEvent">Changes the option of a
+                                    select element</a></li>
+                            <li class="event-list-element"><a href="#event-11" class="btnEvent">Position the mouse over
+                                    an element</a></li>
+                            <li class="event-list-element"><a href="#event-12" class="btnEvent">Checkbox is checked or
+                                    unchecked</a></li>
+                            <li class="event-list-element"><a href="#event-13" class="btnEvent">Ul list item is clicked
+                                    (show the item)</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </section>
+    <article id="event-1" class="event-1">
+        <header class="event-body-title">
+            <h2>HTML document has been loaded</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <img src="./images/home.svg" alt="home" />
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result"></div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
-    <div class="test">
-        <div><button>PRUEBAS</button></div>
-    </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+
+
+
+    <!-- loading screen -->
     <div class="loading-wrapper">
         <div class="wrapper">
             <div class="circle"></div>
@@ -49,7 +118,7 @@
             $('.loading-wrapper').fadeOut("slow");
         })
     </script>
-
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
