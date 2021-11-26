@@ -349,10 +349,11 @@
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="main-event-code"><code class="code">src='incorrect'</code></div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if the HTML document has been loaded</div>
-                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">If you write an incorrect image url the loading of the image will
+                        fail</div>
+                    <div class="event-description"><img src="x" class="test-event1"></img></div>
                     <div class="event-description">
                         <div class="result-event1"></div>
                     </div>
@@ -362,11 +363,12 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="main-event-code-jq"><code class="code">src='incorrect'</code></div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the HTML document has been loaded
+                    <div class="event-description">If you write an incorrect image url the loading of the image will
+                        fail
                     </div>
-                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description"><img src='x' class="test-jq-event1"></img></div>
                     <div class="event-description">
                         <div class="result-jq-event1"></div>
                     </div>
@@ -391,9 +393,16 @@
                 <div class="main-event-code"><code class="code">document.onload()</code></div>
                 <div class="event-test">
                     <div class="event-description">Click to check if the HTML document has been loaded</div>
-                    <div class="event-description"><button class="test-event1">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-event1"></div>
+                        <form id="test-event9">
+                            <label for="lname">First name:</label><br>
+                            <input onclick="stopDefAction(event);" type="text" id="lnameJs9" name="lname"
+                                value=""><br><br>
+                            <input class='btnInputJs9' onclick='jsEvent9()' type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div class="event-description">
+                        <div class="result-event9"></div>
                     </div>
                 </div>
             </div>
@@ -405,9 +414,15 @@
                 <div class="event-test-jq">
                     <div class="event-description">Click to check if the HTML document has been loaded
                     </div>
-                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-jq-event1"></div>
+                        <form id="test-jq-event9">
+                            <label for="lname">First name:</label><br>
+                            <input type="text" id="lname" name="lname" value=""><br><br>
+                            <input onclick="jqEvent9()" type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div class="event-description">
+                        <div class="result-jq-event9"></div>
                     </div>
                 </div>
             </div>
@@ -442,9 +457,17 @@
                 <div class="event-test-jq">
                     <div class="event-description">Click to check if the HTML document has been loaded
                     </div>
-                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-jq-event1"></div>
+                        <form class="test-jq-event10">
+                            <input class="target-input-jq-event-10" type="text" value="Field 1">
+                            <select class="target-jq-event10">
+                                <option value="option1" selected="selected"> Option 1 </option>
+                                <option value="option2"> Option 2 </option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="event-description">
+                        <div class="result-jq-event10"></div>
                     </div>
                 </div>
             </div>

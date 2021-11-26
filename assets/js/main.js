@@ -50,3 +50,16 @@ img7.addEventListener('click', function () {
         document.querySelector('.result-event7').innerText = 'Image is loaded!';
     }
 })
+
+/* EVENT 9 */
+
+var btnEvent9Js = document.querySelector('.btnInputJs9')
+
+function stopDefAction(evt) {
+    evt.preventDefault();
+}
+
+function jsEvent9() {
+    btnEvent9Js.preventDefault();
+    document.querySelector("#test-event9").submit();
+}

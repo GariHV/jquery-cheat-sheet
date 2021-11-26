@@ -41,3 +41,16 @@ var img7jq = $('.test-jq-event7').on('click', function () {
         $('.result-jq-event7').text('Image is loaded!');
     })
 })
+
+/* EVENT 9 */
+
+$("#target").submit(function (event) {
+    alert("Handler for .submit() called.");
+    event.preventDefault();
+});
+
+/* EVENT 10 */
+
+$(".target-jq-event10").change(function () {
+    $('.target-input-jq-event-10').val();
+});
