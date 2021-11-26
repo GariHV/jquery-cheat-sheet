@@ -453,7 +453,7 @@ code {
     margin-top: 3rem;
     background-color: hsl(201, 65%, 45%);
     height: 5%;
-    width: 30%;
+    width: auto;
     margin: 2rem auto;
     border-radius: .25rem;
 }
@@ -462,7 +462,7 @@ code {
     margin-top: 3rem;
     background-color: hsl(62, 76%, 46%);
     height: 5%;
-    width: 30%;
+    width: auto;
     margin: 2rem auto;
     border-radius: .25rem;
 }
@@ -487,13 +487,13 @@ code {
     padding-top: 3rem;
 }
 
-
-/* SECOND EVENT */
-/* THIRD EVENT */
-/* FOURTH EVENT */
-/* FIFTH EVENT */
-/* SIXTH EVENT */
 /* SEVENTH EVENT */
+.test-event7,
+.test-jq-event7 {
+    height: 150px;
+    width: 150px;
+}
+
 /* EIGHT EVENT */
 /* NINETH EVENT */
 /* TENTH EVENT */
