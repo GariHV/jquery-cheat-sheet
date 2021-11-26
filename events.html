@@ -8,6 +8,7 @@
     <title>Events</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="/assets/css/events.css">
+
 </head>
 
 <body>
@@ -17,9 +18,10 @@
                 <li> <a id='btnNeon-nav' href='/index.html' class="neon-button-nav"> Garikoitz's <br>JQuery & JavaScript
                         Cheat
                         Sheet</a></li>
-                <li><a class="nav-links" href="./events.html">Events</a></li>
-                <li><a class="nav-links" href="./functions_selectors.html">Functions</a></li>
-                <li><a class="nav-links" href="./selectors.html">Selectors</a></li>
+                <li><a class="nav-links-events" href="./events.html">Events</a></li>
+                <li><a class="nav-links-functions" href="./functions_selectors.html">Functions</a>
+                </li>
+                <li><a class="nav-links-selectors" href="./selectors.html">Selectors</a></li>
             </ul>
         </nav>
 
@@ -27,7 +29,7 @@
             <section data-router-view="home" class="events-page">
                 <article class="home-content">
                     <div class="event-presentation">
-                        <h1>Events</h1>
+                        <h3>Events</h3>
                     </div>
                     <div class="events-list">
                         <ul>
@@ -62,6 +64,8 @@
             </section>
         </main>
     </section>
+    <!-- START OF EVENTS -->
+    <!-- EVENT 1 -->
     <article id="event-1" class="event-1">
         <header class="event-body-title">
             <h2>HTML document has been loaded</h2>
@@ -74,9 +78,9 @@
                 <div class="main-event-code"><code class="code">document.onload()</code></div>
                 <div class="event-test">
                     <div class="event-description">Click to check if the HTML document has been loaded</div>
-                    <div class="event-description"><button class="test">TEST</button></div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
                     <div class="event-description">
-                        <div class="result"></div>
+                        <div class="result-event1"></div>
                     </div>
                 </div>
             </div>
@@ -84,19 +88,473 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">document.onload()</code></div>
-                <div class="event-test">
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
                     <div class="event-description">Click to check if the HTML document has been loaded
                     </div>
-                    <div class="event-description"><button class="test">TEST</button></div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
                     <div class="event-description">
-                        <div class="result"></div>
+                        <div class="result-jq-event1"></div>
                     </div>
                 </div>
             </div>
         </div>
         </div>
     </article>
+
+    <!-- EVENT 2 -->
+
+    <article id="event-2" class="event-1">
+        <header class="event-body-title">
+            <h2>HTML item has been clicked</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 3 -->
+
+    <article id="event-3" class="event-1">
+        <header class="event-body-title">
+            <h2>HTML item has been double clicked</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 4 -->
+    <article id="event-4" class="event-1">
+        <header class="event-body-title">
+            <h2>User presses a key on the keyboard</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 5 -->
+    <article id="event-5" class="event-1">
+        <header class="event-body-title">
+            <h2>User moves the mouse cursor</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 6 -->
+    <article id="event-6" class="event-1">
+        <header class="event-body-title">
+            <h2>User changes a value of an text input</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 7 -->
+    <article id="event-7" class="event-1">
+        <header class="event-body-title">Image is loaded</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 8 -->
+    <article id="event-8" class="event-1">
+        <header class="event-body-title">
+            <h2>Image fails to load</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 9 -->
+
+
+    <article id="event-9" class="event-1">
+        <header class="event-body-title">
+            <h2>Form is submitted</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 10 -->
+    <article id="event-10" class="event-1">
+        <header class="event-body-title">
+            <h2>Changes the option of a select element</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 11 -->
+    <article id="event-11" class="event-1">
+        <header class="event-body-title">
+            <h2>Position the mouse over an element</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 12 -->
+    <article id="event-12" class="event-1">
+        <header class="event-body-title">
+            <h2>HTML item has been clicked</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- EVENT 13 -->
+
+    <article id="event-13" class="event-1">
+        <header class="event-body-title">
+            <h2>HTML item has been clicked</h2>
+        </header>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="event-test">
+                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-event1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="event-test-jq">
+                    <div class="event-description">Click to check if the HTML document has been loaded
+                    </div>
+                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description">
+                        <div class="result-jq-event1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+
+
+
+
+
 
 
 
@@ -119,6 +577,8 @@
         })
     </script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/jquery.js"></script>
+
 </body>
 
 </html>

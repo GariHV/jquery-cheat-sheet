@@ -2,6 +2,15 @@
     --clr-neon: hsl(205 100% 70%);
     --clr-bg: hsl(205 100% 9%);
     --clr-neon-pink: hsl(307, 100%, 50%);
+    --bg: hsl(0, 100%, 10%);
+    --color: hsl(0, 0%, 100%);
+    --underline-width: 3px;
+    --underline-block-width: 20px;
+    --underline-color: hsl(0, 0%, 100%);
+    --underline-color-hover-events: hsl(307, 100%, 50%);
+    --underline-color-hover-functions: hsla(180, 100%, 50%, 1);
+    --underline-color-hover-selectors: rgb(255, 38, 0);
+    --underline-transition: 0.5s;
 }
 
 *,
@@ -207,20 +216,20 @@
 
 .neon-button-nav {
     margin-left: 20px;
-    height: 70px;
+    height: 77px;
     width: 400px;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--clr-neon);
+    color: hsl(201, 100%, 100%);
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    border: var(--clr-neon) 0.25rem solid;
+    border: hsl(201, 100%, 100%) 0.25rem solid;
     border-radius: 0.25rem;
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
         0 0 0.45em currentColor;
-    box-shadow: inset 0 0 0.5em 0 var(--clr-neon),
-        0 0 0.5em 0 var(--clr-neon);
+    box-shadow: inset 0 0 0.5em 0 hsl(201, 100%, 100%),
+        0 0 0.5em 0 hsl(201, 100%, 100%);
     position: relative;
 }
 
@@ -228,7 +237,7 @@
     pointer-events: none;
     content: "";
     position: absolute;
-    background: var(--clr-neon);
+    background: hsl(201, 100%, 100%);
     top: 120%;
     left: 0;
     width: 100%;
@@ -245,9 +254,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    box-shadow: 0 0 2em 0.5em hsl(201, 100%, 100%);
     opacity: 0;
-    background-color: var(--clr-neon);
+    background-color: hsl(201, 100%, 100%);
     z-index: -1;
     transition: opacity 100ms linear;
 }
@@ -268,9 +277,45 @@
     opacity: 1;
 }
 
-.nav-links {
+.nav-links-events,
+.nav-links-functions,
+.nav-links-selectors {
     font-size: 1.5rem;
-    color: var(--clr-neon);
+    color: hsl(201, 100%, 100%);
+    text-decoration: none;
+    background-image: linear-gradient(90deg, var(--bg), var(--bg)),
+        linear-gradient(90deg, var(--underline-color), var(--underline-color));
+    background-size: var(--underline-block-width) var(--underline-width),
+        100% var(--underline-width);
+    background-repeat: no-repeat;
+    background-position-x: calc(var(--underline-block-width) * -1),
+        0;
+    background-position-y: 100%;
+    transition: background-position-x var(--underline-transition);
+}
+
+.nav-links-events:hover {
+    background-image: linear-gradient(90deg, var(--bg), var(--bg)),
+        linear-gradient(90deg,
+            var(--underline-color-hover-events),
+            var(--underline-color-hover-events));
+    background-position-x: calc(100% + var(--underline-block-width)), 0;
+}
+
+.nav-links-functions:hover {
+    background-image: linear-gradient(90deg, var(--bg), var(--bg)),
+        linear-gradient(90deg,
+            var(--underline-color-hover-functions),
+            var(--underline-color-hover-functions));
+    background-position-x: calc(100% + var(--underline-block-width)), 0;
+}
+
+.nav-links-selectors:hover {
+    background-image: linear-gradient(90deg, var(--bg), var(--bg)),
+        linear-gradient(90deg,
+            var(--underline-color-hover-selectors),
+            var(--underline-color-hover-selectors));
+    background-position-x: calc(100% + var(--underline-block-width)), 0;
 }
 
 body {
@@ -286,7 +331,7 @@ body {
 
 .events-page {
     margin-top: 5rem;
-    height: 65vh;
+    height: 70vh;
     width: 70%;
     color: var(--clr-neon-pink);
     border: var(--clr-neon-pink) 0.25rem solid;
@@ -297,6 +342,7 @@ body {
 }
 
 .home-content>.event-presentation {
+    height: 100px;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -306,6 +352,7 @@ body {
 .events-list {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 0.5rem;
 }
 
 .events-list>ul {
@@ -356,6 +403,10 @@ body {
     flex-direction: column;
     margin: 2rem 0;
     color: var(--clr-neon-pink);
+}
+
+code {
+    color: black;
 }
 
 .event-body-title {
@@ -422,6 +473,14 @@ body {
     background-color: white;
     margin: 2rem auto;
     border: hsl(62, 76%, 46%) 0.25rem solid;
+}
+
+.event-test-jq {
+    height: 60%;
+    width: 80%;
+    background-color: white;
+    margin: 2rem auto;
+    border: hsl(201, 65%, 45%) 0.25rem solid;
 }
 
 .event-description {
