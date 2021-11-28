@@ -51,15 +51,53 @@ img7.addEventListener('click', function () {
     }
 })
 
-/* EVENT 9 */
+/* EVENT 9 FIXME:*/
 
-var btnEvent9Js = document.querySelector('.btnInputJs9')
+$("#test-event9").submit(function (event) {
+    $('.result-event9').text('Submited!');
+    event.preventDefault();
 
-function stopDefAction(evt) {
-    evt.preventDefault();
+});
+
+/* EVENT 10 */
+
+function event10Function() {
+    document.querySelector(".result-event10").innerHTML = 'Changed!';
 }
 
-function jsEvent9() {
-    btnEvent9Js.preventDefault();
-    document.querySelector("#test-event9").submit();
+/* EVENT 11 */
+
+let event11JSSpace = document.querySelector(".result-event11JS");
+
+event11JSSpace.onmouseover = function () {
+    mouseOver()
+};
+event11JSSpace.onmouseout = function () {
+    mouseOut()
+};
+
+function mouseOver() {
+    event11JSSpace.style.color = "red";
 }
+
+function mouseOut() {
+    event11JSSpace.style.color = "black";
+}
+
+/* EVENT 12 */
+
+validate();
+
+function validate() {
+    if (document.querySelector('.checkboxEvent12JS').checked) {
+        document.querySelector(".result-event12").innerHTML = 'Checked!';
+    } else {
+        document.querySelector(".result-event12").innerHTML = 'Not checked!';
+    }
+}
+
+/* EVENT 13 */
+
+let liEvent13Js = document.querySelector('.li-js-event13').addEventListener('click', function () {
+    document.querySelector('.li-js-event13').style.color = "red"
+})

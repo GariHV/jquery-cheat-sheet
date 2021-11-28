@@ -390,15 +390,14 @@
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="main-event-code"><code class="code">document.getElementById("").submit();</code></div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if the HTML document has been loaded</div>
+                    <div class="event-description">Click to check if the form is submitted</div>
                     <div class="event-description">
                         <form id="test-event9">
                             <label for="lname">First name:</label><br>
-                            <input onclick="stopDefAction(event);" type="text" id="lnameJs9" name="lname"
-                                value=""><br><br>
-                            <input class='btnInputJs9' onclick='jsEvent9()' type="submit" value="Submit">
+                            <input type="text" id="lnameJs9" name="lname" value=""><br><br>
+                            <input type="submit" value="Submit">
                         </form>
                     </div>
                     <div class="event-description">
@@ -410,15 +409,16 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="main-event-code-jq"><code class="code">$().submit(function ())</code>
+                </div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the HTML document has been loaded
+                    <div class="event-description">Click to check if the form is submitted
                     </div>
                     <div class="event-description">
                         <form id="test-jq-event9">
                             <label for="lname">First name:</label><br>
                             <input type="text" id="lname" name="lname" value=""><br><br>
-                            <input onclick="jqEvent9()" type="submit" value="Submit">
+                            <input type="submit" value="Submit">
                         </form>
                     </div>
                     <div class="event-description">
@@ -440,12 +440,19 @@
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="main-event-code"><code class="code">onchange="event10Function()"</code> </div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if the HTML document has been loaded</div>
-                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">Change the option to check if the select section works</div>
                     <div class="event-description">
-                        <div class="result-event1"></div>
+                        <form class="test-event10">
+                            <select onchange="event10Function()" class="target-event10">
+                                <option class="option1Event10JS" value="option1" selected="selected"> Option 1 </option>
+                                <option class="option2Event10JS" value="option2"> Option 2 </option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="event-description">
+                        <div class="result-event10"></div>
                     </div>
                 </div>
             </div>
@@ -453,13 +460,13 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="main-event-code-jq"><code class="code">$().change(function ())</code>
+                </div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the HTML document has been loaded
+                    <div class="event-description">Change the option to check if the select section works
                     </div>
                     <div class="event-description">
                         <form class="test-jq-event10">
-                            <input class="target-input-jq-event-10" type="text" value="Field 1">
                             <select class="target-jq-event10">
                                 <option value="option1" selected="selected"> Option 1 </option>
                                 <option value="option2"> Option 2 </option>
@@ -485,12 +492,14 @@
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="main-event-code"><code class="code">.onmouseover() // .onmouseout()</code></div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if the HTML document has been loaded</div>
-                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">Mouse over the text and check what happends</div>
+                    <div class="event-description"></div>
                     <div class="event-description">
-                        <div class="result-event1"></div>
+                        <div class="result-event1">
+                            <p class="result-event11JS">TEST</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -498,13 +507,15 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="main-event-code-jq"><code class="code">.onmouseover() // .onmouseout()</code></div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the HTML document has been loaded
+                    <div class="event-description">Mouse over the text and check what happends
                     </div>
-                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description"></div>
                     <div class="event-description">
-                        <div class="result-jq-event1"></div>
+                        <div class="result-jq-event1">
+                            <p class="result-event11JQ">TEST</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -522,12 +533,13 @@
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="main-event-code"><code class="code">if
+                        (document.querySelector('').checked)</code></div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if the HTML document has been loaded</div>
-                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">Click to check if the checkbox is checked</div>
+                    <div class="event-description"><input class='checkboxEvent12JS' type="checkbox"></div>
                     <div class="event-description">
-                        <div class="result-event1"></div>
+                        <div class="result-event12"></div>
                     </div>
                 </div>
             </div>
@@ -535,13 +547,14 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="main-event-code-jq"><code class="code">$().change(function () {if (this.checked)
+                        {}else{}})</code></div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the HTML document has been loaded
+                    <div class="event-description">Click to check if the checkbox is checked
                     </div>
-                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description"><input class='checkboxEvent12JQ' type="checkbox"></div>
                     <div class="event-description">
-                        <div class="result-jq-event1"></div>
+                        <div class="result-jq-event12"></div>
                     </div>
                 </div>
             </div>
@@ -562,10 +575,14 @@
                 </div>
                 <div class="main-event-code"><code class="code">document.onload()</code></div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if the HTML document has been loaded</div>
-                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">Click to check the changes</div>
                     <div class="event-description">
-                        <div class="result-event1"></div>
+                        <ul>
+                            <li class="li-js-event13">CLICK TO TEST</li>
+                        </ul>
+                    </div>
+                    <div class="event-description">
+                        <div class="result-event13"></div>
                     </div>
                 </div>
             </div>
@@ -573,13 +590,20 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="main-event-code-jq"><code class="code">$().click(function (e) {
+                        e.preventDefault();
+                        $(").css("color", "red");
+                        })</code></div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the HTML document has been loaded
+                    <div class="event-description">Click to check the changes
                     </div>
-                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-jq-event1"></div>
+                        <ul>
+                            <li class="li-jq-event13">CLICK TO TEST</li>
+                        </ul>
+                    </div>
+                    <div class="event-description">
+                        <div class="result-jq-event13"></div>
                     </div>
                 </div>
             </div>

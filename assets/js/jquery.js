@@ -16,7 +16,7 @@ var btnTestEvent3Jq = $('.test-jq-event3').dblclick(function () {
     $('.result-jq-event3').text('Is double clicked!')
 })
 
-/* EVENT 4 */
+/* EVENT 4 FIXME: */
 
 window.addEventListener('keydown', function (e) {
     document.querySelector('.result-jq-event4').innerHTML = `You pressed: ${e.key}`;
@@ -44,13 +44,40 @@ var img7jq = $('.test-jq-event7').on('click', function () {
 
 /* EVENT 9 */
 
-$("#target").submit(function (event) {
-    alert("Handler for .submit() called.");
+$("#test-jq-event9").submit(function (event) {
+    $('.result-jq-event9').text('Submited!');
     event.preventDefault();
+
 });
 
 /* EVENT 10 */
 
 $(".target-jq-event10").change(function () {
-    $('.target-input-jq-event-10').val();
+    $('.result-jq-event10').text('Changed!');
 });
+
+/* EVENT 11 */
+$(".result-event11JQ").mouseover(function () {
+    $(".result-event11JQ").css('color', 'red')
+})
+
+$(".result-event11JQ").mouseout(function () {
+    $(".result-event11JQ").css('color', 'black')
+})
+
+/* EVENT 12 */
+
+$(".checkboxEvent12JQ").change(function () {
+    if (this.checked) {
+        $('.result-jq-event12').text('Checkbox checked!');
+    } else {
+        $('.result-jq-event12').text('Checkbox is not checked!');
+    }
+})
+
+/* EVENT 13 */
+
+$('.li-jq-event13').click(function (e) {
+    e.preventDefault();
+    $(".li-jq-event13").css("color", "red");
+})
