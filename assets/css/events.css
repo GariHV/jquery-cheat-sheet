@@ -354,7 +354,7 @@ body {
 
 .section-page {
     margin-top: 5rem;
-    height: 70vh;
+    height: 75vh;
     width: 80%;
     color: var(--underline-color-hover-selectors);
     border: var(--underline-color-hover-selectors) 0.25rem solid;
@@ -554,6 +554,21 @@ code {
 .test-jq-event7 {
     height: 150px;
     width: 150px;
+}
+
+/* SIXTH SELECTOR */
+
+.p-selector6-jq {
+    display: none;
+}
+
+.p-selector6 {
+    display: none;
+}
+
+/* SELECTOR 10 */
+.select10 {
+    margin-top: 1rem;
 }
 
 /* EIGHT EVENT */

@@ -71,14 +71,19 @@
                                     from
                                     a
                                     specific selector</a></li>
+                            <li class="selector-list-element"><a href="#event-11" class="btnSelector">Animate an item
+                                    after 2 seconds from the initial page load</a></li>
                         </ul>
                     </div>
                 </article>
             </section>
         </main>
     </section>
+
     <!-- START OF SELECTORS -->
+
     <!-- SELECTOR 1 -->
+
     <article id="event-1" class="event-1">
         <header class="event-body-title">
             <h2>Iterate a
@@ -92,12 +97,16 @@
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="main-event-code"><code class="code">for (iterator of HTMLCollection) {}</code></div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if the HTML document has been loaded</div>
-                    <div class="event-description"><button class="test-event1">TEST</button></div>
+                    <div class="event-description">Click to iterate the collection</div>
+                    <div class="event-description"><button class="test-selector1">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-event1"></div>
+                        <div class="result-section1">
+                            <p class="p-selector1-js">TEST</p>
+                            <p class="p-selector1-js">TEST</p>
+                            <p class="p-selector1-js">TEST</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,13 +114,19 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$(document).ready()</code></div>
+                <div class="main-event-code-jq"><code class="code">$().on('click', function () {
+                        $().css('color', 'red');
+                        })</code></div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the HTML document has been loaded
+                    <div class="event-description">Click to iterate the collection
                     </div>
-                    <div class="event-description"><button class="test-jq-event1">TEST</button></div>
+                    <div class="event-description"><button class="test-jq-selector1">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-jq-event1"></div>
+                        <div class="result-jq-selector1">
+                            <p class="p-selector1-jq">TEST</p>
+                            <p class="p-selector1-jq">TEST</p>
+                            <p class="p-selector1-jq">TEST</p>
+                        </div>
                     </div>
 
                 </div>
@@ -129,18 +144,20 @@
                 of
                 a certain element and change its font weight</h2>
         </header>
+        <a href='#main-menu' class="btnBackToTop">Back to Menu</a>
         <div class="event-content">
             <div class="js-event-display">
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">document.addEventListener("click", () =>
-                        {})</code></div>
+                <div class="main-event-code"><code class="code">document.querySelector().parentElement</code></div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if you have clicked</div>
-                    <div class="event-description"><button class="test-event2">TEST</button></div>
+                    <div class="event-description">Click to select the father</div>
+                    <div class="event-description"><button class="test-selector2">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-event2"></div>
+                        <div class="result-event2">Father <p class="p-selector2-js">Child</p>
+                            <p>Child</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -148,13 +165,15 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$(".myvalue").click()</code></div>
+                <div class="main-event-code-jq"><code class="code">$().parent()</code></div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if you have clicked
+                    <div class="event-description">Click to select the father
                     </div>
-                    <div class="event-description"><button class="test-jq-event2">TEST</button></div>
+                    <div class="event-description"><button class="test-jq-selector2">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-jq-event2"></div>
+                        <div class="result-event2">Father <p class="p-selector2-jq">Child</p>
+                            <p>Child</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,17 +187,21 @@
         <header class="event-body-title">
             <h2>Get the collection of children of a certain element and change its font weight</h2>
         </header>
+        <a href='#main-menu' class="btnBackToTop">Back to Menu</a>
         <div class="event-content">
             <div class="js-event-display">
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">document.onload()</code></div>
+                <div class="main-event-code"><code class="code">var myElement = document.getElementById();
+                        myElement.children;</code></div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if you have double clicked</div>
-                    <div class="event-description"><button class="test-event3">TEST</button></div>
+                    <div class="event-description">Click to slect the children</div>
+                    <div class="event-description"><button class="test-selector3">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-event3"></div>
+                        <div class="result-selector3">Father <p class="p-selector3-js">Child</p>
+                            <p>Child</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,13 +209,15 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$(".myvalue").dblclick(function (){})</code></div>
+                <div class="main-event-code-jq"><code class="code">$().children()</code></div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if you have double clicked
+                    <div class="event-description">Click to select the children
                     </div>
-                    <div class="event-description"><button class="test-jq-event3">TEST</button></div>
+                    <div class="event-description"><button class="test-jq-selector3">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-jq-event3"></div>
+                        <div class="result-event3-jq">Father <p class="p-selector3-jq">Child</p>
+                            <p>Child</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -205,19 +230,21 @@
         <header class="event-body-title">
             <h2>Get all the elements that have a certain class and change their font weight</h2>
         </header>
+        <a href='#main-menu' class="btnBackToTop">Back to Menu</a>
         <div class="event-content">
             <div class="js-event-display keyboard-js-test">
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">X.addEventListener('keydown', function (e) {
-                        document.querySelector('p').innerHTML = `..`;
-                        }, false);</code></div>
+                <div class="main-event-code"><code class="code">document.getElementsByClassName("class")</code></div>
                 <div class="event-test">
-                    <div class="event-description">Check the key on the keyboard that you have pressed</div>
-                    <div class="event-description"></div>
+                    <div class="event-description">Change font weight of all elements</div>
+                    <div class="event-description"><button class="test-selector4">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-event4"></div>
+                        <div class="result-event4">
+                            <p class="p-selector4">TEST</p>
+                            <p class="p-selector4">TEST</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -225,14 +252,16 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$("#target").keypress(function () {
-                        $('.result-jq-event3').text();</code></div>
+                <div class="main-event-code-jq"><code class="code">$("x")</code></div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the HTML document has been loaded
+                    <div class="event-description">Change font weight of all elements
                     </div>
-                    <div class="event-description"></div>
+                    <div class="event-description"><button class="test-jq-selector4">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-jq-event4"></div>
+                        <div class="result-event4">
+                            <p class="p-selector4-jq">TEST</p>
+                            <p class="p-selector4-jq">TEST</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,17 +274,18 @@
         <header class="event-body-title">
             <h2>Get an item by id and change its font weight</h2>
         </header>
+        <a href='#main-menu' class="btnBackToTop">Back to Menu</a>
         <div class="event-content">
             <div class="js-event-display">
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">x.onmousemove()</code></div>
-                <div onmousemove="mouseMoveEvent5(event)" class="event-test event-test5">
-                    <div class="event-description">Move over the white space to check where is the mouse</div>
-                    <div class="event-description"></div>
+                <div class="main-event-code"><code class="code">x.getElementById()</code></div>
+                <div class="event-test event-test5">
+                    <div class="event-description">Click to select the item by Id and change the font weight</div>
+                    <div class="event-description"><button class="test-selector5">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-event5"></div>
+                        <div id="result-selector5">TEST</div>
                     </div>
                 </div>
             </div>
@@ -263,14 +293,14 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$(document).bind('mousemove', function ())</code>
+                <div class="main-event-code-jq"><code class="code">$('#x')</code>
                 </div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the HTML document has been loaded
+                    <div class="event-description">Click to select the item by Id and change the font weight
                     </div>
-                    <div class="event-description"></div>
+                    <div class="event-description"><button class="test-jq-selector5">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-jq-event5"></div>
+                        <div id="result-jq-selector5">TEST</div>
                     </div>
                 </div>
             </div>
@@ -285,17 +315,22 @@
                 color
                 and the display itself so it’s visible</h2>
         </header>
+        <a href='#main-menu' class="btnBackToTop">Back to Menu</a>
         <div class="event-content">
             <div class="js-event-display">
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">().addEventListener("change", function ())</code></div>
+                <div class="main-event-code"><code class="code">document.getElementsByClassName();
+                        for (const elem of allElems)</code></div>
                 <div class="event-test">
-                    <div class="event-description">Check if you changed the value of the text input</div>
-                    <div class="event-description"><input class="test-event6"></input></div>
+                    <div class="event-description">Click to test it</div>
+                    <div class="event-description"><button class="test-selector6">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-event6"></div>
+                        <div class="result-event6">
+                            <p class="p-selector6">TEST</p>
+                            <p class="p-selector6">TEST</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -303,14 +338,17 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$().on('input', function ())</code>
+                <div class="main-event-code-jq"><code class="code">$().each(function (index, element</code>
                 </div>
                 <div class="event-test-jq">
-                    <div class="event-description">Check if you changed the value of the text input
+                    <div class="event-description">Check to test it
                     </div>
-                    <div class="event-description"><input class="test-jq-event6"></input></div>
+                    <div class="event-description"><button class="test-jq-selector6">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-jq-event6"></div>
+                        <div class="result-event6">
+                            <p class="p-selector6-jq">TEST</p>
+                            <p class="p-selector6-jq">TEST</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -325,39 +363,46 @@
                 a
                 select element that are selected (attribute selected)</h2>
         </header>
+        <a href='#main-menu' class="btnBackToTop">Back to Menu</a>
         <div class="event-content">
             <div class="js-event-display">
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">x.addEventListener('click', function () {
-                        if (x.src) {}</code></div>
+                <div class="main-event-code"><code class="code">function getOptionsSelected() {
+                        let allElems = document.querySelectorAll('option[selected]');
+                        }</code></div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if the image is loaded</div>
-                    <div class="event-description"><img src="/assets/img/1200px-Unofficial_JavaScript_logo_2.svg.png"
-                            class="test-event7"></img></div>
-                    <div class="event-description">
-                        <div class="result-event7"></div>
-                    </div>
+                    <div class="event-description">Click to show the option selected</div>
+                    <div class="event-description"><button class="test-selector7">TEST</button></div>
+                    <form class="test-event7">
+                        <select class="target-event7">
+                            <option value="option1" selected="selected"> Option 1 </option>
+                            <option value="option2"> Option 2 </option>
+                        </select>
+                    </form>
+                    <div class="result-selector7"></div>
                 </div>
             </div>
             <div class="jq-event-display">
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">var img7jq = $('x').on('click',
-                        function () {
-                        $('x').load('a.html', function () {
-                        })
-                        })</code></div>
+                <div class="main-event-code-jq"><code class="code">function getOptionsSelected() {
+                        $('option[selected]');
+                        }</code></div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the image is loaded
+                    <div class="event-description">Click to show the option selected
                     </div>
-                    <div class="event-description"><img src="/assets/img/jQurery.png" class="test-jq-event7"></img>
+                    <div class="event-description"><button class="test-jq-selector7">TEST</button>
                     </div>
-                    <div class="event-description">
-                        <div class="result-jq-event7"></div>
-                    </div>
+                    <form class="test-jq-event7">
+                        <select class="target-jq-event7">
+                            <option value="option1" selected="selected"> Option 1 </option>
+                            <option value="option2"> Option 2 </option>
+                        </select>
+                    </form>
+                    <div class="result-jq-selector7"></div>
                 </div>
             </div>
         </div>
@@ -371,18 +416,21 @@
                 attribute
                 of the first 'a' element</h2>
         </header>
+        <a href='#main-menu' class="btnBackToTop">Back to Menu</a>
         <div class="event-content">
             <div class="js-event-display">
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">src='incorrect'</code></div>
+                <div class="main-event-code"><code class="code">function getFirstA() {
+                        let firstA = document.querySelector('a');
+                        firstA.href = 'AAA';
+                        }</code></div>
                 <div class="event-test">
-                    <div class="event-description">If you write an incorrect image url the loading of the image will
-                        fail</div>
-                    <div class="event-description"><img src="x" class="test-event1"></img></div>
+                    <div class="event-description">Click to change the href attribute of the a element</div>
+                    <div class="event-description"><button class="test-selector8">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-event1"></div>
+                        <a href="#event-9" class="result-selector8">Go to next article</a>
                     </div>
                 </div>
             </div>
@@ -390,14 +438,16 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">src='incorrect'</code></div>
+                <div class="main-event-code-jq"><code class="code">function getFirstA() {
+                        let firstA = $('a').first();
+                        firstA.attr('href', 'nuevoSrc');
+                        }</code></div>
                 <div class="event-test-jq">
-                    <div class="event-description">If you write an incorrect image url the loading of the image will
-                        fail
+                    <div class="event-description">Click to change the href attribute of the a element
                     </div>
-                    <div class="event-description"><img src='x' class="test-jq-event1"></img></div>
+                    <div class="event-description"><button class="test-jq-selector8">TEST</button></div>
                     <div class="event-description">
-                        <div class="result-jq-event1"></div>
+                        <a href="#event-9" class="result-jq-selector8">Go to next article</a>
                     </div>
                 </div>
             </div>
@@ -413,20 +463,24 @@
                 the
                 value of the first 'input' of the page</h2>
         </header>
+        <a href='#main-menu' class="btnBackToTop">Back to Menu</a>
         <div class="event-content">
             <div class="js-event-display">
                 <div>
                     <h3 class="js-event-display-title">JavaScript</h3>
                 </div>
-                <div class="main-event-code"><code class="code">document.getElementById("").submit();</code></div>
+                <div class="main-event-code"><code class="code">b.addEventListener('click', function () {
+                        let a = at.querySelector().value
+                        alert(a)
+                        })</code></div>
                 <div class="event-test">
-                    <div class="event-description">Click to check if the form is submitted</div>
+                    <div class="event-description">Click to check the input content</div>
                     <div class="event-description">
                         <form id="test-event9">
                             <label for="lname">First name:</label><br>
-                            <input type="text" id="lnameJs9" name="lname" value=""><br><br>
-                            <input type="submit" value="Submit">
+                            <input class="inputSelector9Js" type="text" id="lnameJs9" name="lname" value=""><br><br>
                         </form>
+                        <button class="btnSelector9Js">Submit</button>
                     </div>
                     <div class="event-description">
                         <div class="result-event9"></div>
@@ -437,17 +491,20 @@
                 <div>
                     <h3 class="js-event-display-title">JQuery</h3>
                 </div>
-                <div class="main-event-code-jq"><code class="code">$().submit(function ())</code>
+                <div class="main-event-code-jq"><code class="code">$().on('click', function () {
+                        let firstA = $().val();
+                        alert(firstA);
+                        })</code>
                 </div>
                 <div class="event-test-jq">
-                    <div class="event-description">Click to check if the form is submitted
+                    <div class="event-description">Click to check the input content
                     </div>
                     <div class="event-description">
                         <form id="test-jq-event9">
                             <label for="lname">First name:</label><br>
-                            <input type="text" id="lname" name="lname" value=""><br><br>
-                            <input type="submit" value="Submit">
+                            <input class="inputSelector9Jq" type="text" id="lname" name="lname" value=""><br><br>
                         </form>
+                        <button class="btnSelector9Jq">Submit</button>
                     </div>
                     <div class="event-description">
                         <div class="result-jq-event9"></div>
@@ -466,6 +523,65 @@
                 a
                 specific selector</h2>
         </header>
+        <a href='#main-menu' class="btnBackToTop">Back to Menu</a>
+        <div class="event-content">
+            <div class="js-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JavaScript</h3>
+                </div>
+                <div class="main-event-code"><code class="code">function removeAllElems() {
+                        document.querySelectorAll();
+                        for (const elem of x) {
+                        elem.remove();
+                        };
+                        }</code> </div>
+                <div class="event-test">
+                    <div class="event-description">Change the option to check if the select section works</div>
+                    <div></div>
+                    <button class="btnSelector10Js select10">TEST</button>
+                    <div class="event-description">
+                        <p class="selector10-js">TEST</p>
+                        <p class="selector10-js">TEST</p>
+                        <p class="selector10-js">TEST</p>
+                    </div>
+                    <div class="event-description">
+                        <div class="result-event10"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="jq-event-display">
+                <div>
+                    <h3 class="js-event-display-title">JQuery</h3>
+                </div>
+                <div class="main-event-code-jq"><code class="code">function removeAllElems() {
+                        $('.allElems').remove();
+                        }</code>
+                </div>
+                <div class="event-test-jq">
+                    <div class="event-description">Change the option to check if the select section works
+                    </div>
+                    <div></div>
+                    <button class="btnSelector10Jq select10">TEST</button>
+                    <div class="event-description">
+                        <p class="selector10-jq">TEST</p>
+                        <p class="selector10-jq">TEST</p>
+                        <p class="selector10-jq">TEST</p>
+                    </div>
+                    <div class="event-description">
+                        <div class="result-jq-event10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <!-- SELECTOR 11 -->
+    <article id="event-11" class="event-1">
+        <header class="event-body-title">
+            <h2>Animate an item after 2 seconds from the initial page load</h2>
+        </header>
+        <a href='#main-menu' class="btnBackToTop">Back to Menu</a>
         <div class="event-content">
             <div class="js-event-display">
                 <div>
@@ -474,13 +590,9 @@
                 <div class="main-event-code"><code class="code">onchange="event10Function()"</code> </div>
                 <div class="event-test">
                     <div class="event-description">Change the option to check if the select section works</div>
+                    <button class="btnSelector11Js select10">TEST</button>
                     <div class="event-description">
-                        <form class="test-event10">
-                            <select onchange="event10Function()" class="target-event10">
-                                <option class="option1Event10JS" value="option1" selected="selected"> Option 1 </option>
-                                <option class="option2Event10JS" value="option2"> Option 2 </option>
-                            </select>
-                        </form>
+
                     </div>
                     <div class="event-description">
                         <div class="result-event10"></div>
@@ -496,13 +608,9 @@
                 <div class="event-test-jq">
                     <div class="event-description">Change the option to check if the select section works
                     </div>
+                    <button class="btnSelector11Jq select10">TEST</button>
                     <div class="event-description">
-                        <form class="test-jq-event10">
-                            <select class="target-jq-event10">
-                                <option value="option1" selected="selected"> Option 1 </option>
-                                <option value="option2"> Option 2 </option>
-                            </select>
-                        </form>
+
                     </div>
                     <div class="event-description">
                         <div class="result-jq-event10"></div>
@@ -512,8 +620,6 @@
         </div>
         </div>
     </article>
-
-
 
 
 
@@ -539,8 +645,8 @@
             $('.loading-wrapper').fadeOut("slow");
         })
     </script>
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/selector.js"></script>
+    <script src="/assets/js/jq-selector.js"></script>
 
 </body>
 
