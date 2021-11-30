@@ -366,7 +366,7 @@ body {
 
 .function-page {
     margin-top: 3rem;
-    height: 80vh;
+    height: 75vh;
     width: 80%;
     color: var(--underline-color-hover-functions);
     border: var(--underline-color-hover-functions) 0.25rem solid;
@@ -615,6 +615,26 @@ code {
 /* SELECTOR 10 */
 .select10 {
     margin-top: 1rem;
+}
+
+/* FUNCTION 7 */
+
+.result-function7 {
+    margin-top: 1rem;
+}
+
+.result-jq-function7 {
+    margin-top: 1rem;
+}
+
+/* FUNCTION 8 */
+
+.function8-js {
+    color: red;
+}
+
+.function8-jq {
+    color: red;
 }
 
 /* EIGHT EVENT */
